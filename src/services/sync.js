@@ -124,7 +124,7 @@ class SyncService {
             `
             SELECT * FROM sales 
             WHERE id IN (${saleIds.map(() => "?").join(",")})
-            AND status = 'completed' AND is_sync = false
+            AND status = 'completed'
           `,
             saleIds,
           );
