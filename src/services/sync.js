@@ -299,6 +299,7 @@ class SyncService {
               productId: stock.product_id,
               productStock: formattedStock,
               stockMovements: formattedSaleMovements,
+              sale,
             });
           }
         }
